@@ -28,8 +28,8 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: "/avatar.png"
     }
-    
-});
+    // createdAt, updatedAt fields
+}, {timestamps: true});
 
 const User = mongoose.model('User', userSchema);
 
